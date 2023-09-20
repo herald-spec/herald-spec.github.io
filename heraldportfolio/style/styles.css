@@ -312,3 +312,49 @@ label {
     color: var(--white);
 }
 
+@media (max-width: 1200px){
+    header{
+        margin-bottom: 100px; 
+    }
+    .container{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .landing-page-image img{
+        display: none;
+    }
+    .landing-page-container{
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-page-text h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .landing-page-text h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }  
+    .landing-page-button{
+        display: flex;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 772px){
+    header{
+        margin-bottom: 100px; 
+    }
+    .landing-page-container{
+        padding: 30px;
+    }
+    .landing-page-button{
+        display: flex;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
+
+
