@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand img {
+    width: 80px;
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+  .navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0.5em 0.5em;
+    letter-spacing: 4px;
+  }
+  @media screen and (min-width: 768px) {
+    .navbar-brand img {
+      width: 100px;
+    }
+    .navbar-brand {
+      margin-right: 0;
+      padding: 0 1em;
+    }
+   
+  }
+
+  /* HERO SECTION */
+  .banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-text{
+    height: 200px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 200px;
+    background-color: #a29d9d8e;
+    border-radius: 50px;
+}
+.hero-text p{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 auto;
+    justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+    .hero-text p{
+        font-size: 2rem;
+    }
+}
+.down-arrow{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.down-arrow svg{
+    margin-top: 200px;
+}
+/* activities */
+.container-fluid {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project-header-text h1 {
+    margin: 40px;
+    font-size: 4rem;
+    font-weight: 100;
+    color: #fb6f46;
+    letter-spacing: 5px;
+}
+.project-header-text p {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+.activity-img-desc-flow{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.activity-img{
+    display: inline-block;
+}
+.activity-img-desc-flow h2, h4{
+    color: #7c7f54;
+    font-size: 2rem;
+}
+.img-box{
+    padding: 10px;
+    height: 50%;
+    width: 80%;
+    max-width: inherit;
+}
+.activity-img img{
+    object-fit: contain;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+.activity-img h2 h4{
+    font-size: 2rem;
+}
+/* what we've been up to */
+.featured-projects{
+    background-color: #7c7f54;
+    height: 100%;
+    padding: 20px;
+}
+.featured-projects h1 {
+    color: #ffcf8e;
+    text-align: center;
+    font-weight: 100;
+    font-size: 66px;
+    padding: 20px;
+}
+.recent-updates, .blog-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+.recent-updates img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+.recent-updates::after {
+    content: "";
+    width: 350px;
+}
+.recent-projects-btn{
+    padding: 10px 20px;
+    background-color: #7c7f54;
+    border: 1px solid #ffcf8e;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.recent-projects-btn a{
+    text-decoration: none;
+    color: #ffcf8e;
+    font-weight: bold;
+}
+/* latest blog */
+.blog-title{
+    color: #fb6f46;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 66px;
+}
+.blogs img {
+    width: 100%;
+    max-width: 600px;
+    object-fit: fill;
+}
+.blogs h1, h5{
+    color: #7c7f54;
+}
+.blogs h1{
+    margin-top: 20px;
+}
+.blogs p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.latest-blog-btn{
+    padding: 10px 20px;
+    background-color: #FFF;
+    border: 1px solid #7c7f54;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.latest-blog-btn a{
+    text-decoration: none;
+    color: #7c7f54;
+    font-weight: bold;
+}
+/* footer */
+.footer{
+    background-color: #fb6f46;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    margin-top: 20px;
+}
+.footer h1{
+    color: #ffcb8d;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.footer h5{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.input-text input{
+    background-color: transparent;
+    padding: 15px 200px 15px 20px;
+    border: 3px solid #ffcb8d;
+}
+.input-text button{
+    background-color: #7c7f54;
+    color: #fff;
+    padding: 15px 20px 15px 20px;
+    border: 3px solid #ffcb8d;
+    font-weight: bold;
+}
+.input-text ::placeholder{
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+}
+/* COPYRIGHT SECTION */
+.copyright{
+    padding: 20px 0 20px 0;
+    background-color: #4e463d;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .project-header-text h1{
+        font-size: 24px;
+    }
+}
