@@ -162,7 +162,6 @@ label {
 }
 /* featured projects */
 #projects{
-    /* background-color: rgb(246, 148, 148); remove */
     margin: 10px;
 }
 .projects-heading{
@@ -186,7 +185,7 @@ label {
 }
 .featured-projects-container{
     background-color: var(--base-bg-color);
-    height: 100%;
+    height: inherit;
     width: 100%;
     max-width: 1200px;
     margin: 50px auto;
