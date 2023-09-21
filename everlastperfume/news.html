@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>News</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+
+
+
+/*------  Product news  ------*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-top:0px;
+  margin-top: 0px;
+  padding: 0;
+}
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-big {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.big-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.carbox {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 0px 0 rgba(0,0,0,0.16),0 0 5px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+
+.img-carbox {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-carbox img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.carbox-content {
+  padding:15px;
+  text-align:left;
+}
+.carbox-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.carbox-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.carbox-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.carbox-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+
+/*-----  Product news end -----*/
+
+
+
+
+
+/**** All text in homepage to resize ****/
+@media screen and (min-width:601px){.comptext{font-size: 50px;}}
+@media screen and (max-width:600px){.comptext{font-size: 40px;}}
+
+/**** All text in homepage to resize end ****/
+
+
+
+/* PRODUCTS NEWS ACCORDION HEADER */
+
+.title {
+  margin-top: 1.5%;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  left: 1%;
+}
+
+.title::after {
+  content: "";
+  width: 80px;
+  position: absolute;
+  height: 6px;
+  border-radius: 1px;
+  background: gold;
+  left: 0;
+  bottom: -15px;
+}
+/* PRODUCTS NEWS ACCORDION HEADER */
+
+</style>
+</head>
+
+
+
+<body>
+
+
+
+          <!-- Navigation -->
+
+            <div class="mx-auto" style="width: 250px;">
+              <img id="logo-main" src="Images/logofinal.png" style="max-width: 100%; height: auto;"alt=""/>
+            </div>
+
+
+<nav class="navbar navbar-light navbar-expand-md bg-light" >
+    <div class="container" style="margin-top: 0;"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" ><span class="navbar-toggler-icon" ></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav flex-grow-1 justify-content-between">
+                
+                <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">ABout</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="products.html">Product</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="product-ranking.html">Ranking</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="promo.html">Promo</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="news.html">News</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+           <!-- Navigation end -->
+
+
+
+
+
+
+
+
+
+          <!-- Product news -->
+
+<section class="wrapper">
+    <div class="container-big">
+        <div>
+            <img src="" class="big-logo"/>
+            <h1 class="comptext" style="font-family:century gothic;">
+                 Product news
+            </h1>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+
+                     <div class="col-lg-4 col-sm-4 col-xs-12 col-12">
+                        <div class="carbox">
+                            <a class="img-carbox" >
+                            <img src=Images/9.jpeg />
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <a href="#">Casie flowers are so naive and innocent to survive in the dangers
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    The secret to marvelous perfumes is exquisite raw materials. 
+                                    That is why the highest-quality ingredients for the factory 
+                                     creations have always been used by EverLast perfume...
+                                </p>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="#" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-xs-12 col-12">
+                        <div class="carbox">
+                            <a class="img-carbox" >
+                            <img src=Images/prod4.png />
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <a href="#"> Two types of jasmine grows in a lake sorround by aqautic plants
+                                  </a>
+                                </h4>
+                                <p class="">
+                                     Previously only available in-store at Selfridges, the Bespoke Collection features 20 fragrance blends created by the brand’s in-house perfumer, which consumers are able to try at-home....
+                                </p>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="#" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-xs-12 col-12">
+                        <div class="carbox">
+                            <a class="img-carbox" href="#">
+                            <img src=Images/Niche.png />
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <a href="#">Everlast de Niche are Now available in luxury size (try it now)
+                                  </a>
+                                </h4>
+                                <p class="">
+                                   Everlast have decided that the best way to showcase their new modern fragrance for men Niche de Everlast Eau de Parfum is to give it more room, in a larger content flacon.......
+                                </p>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="#" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+          <!-- Product news end -->
+
+
+
+
+
+
+
+
+
+
+
+         <!-- Accordion -->
+
+<div class="container-lg">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="title">Frequently ask questions</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>How long does EverLast take to deliver?</a>                 
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">Your items can be delivered to your home address or to the address that you provided when placing your order on the EverLast.com website. Your items will be delivered as soon as payment for your order has been registered, within 5 working days for standard deliveries and 2 working days for express deliveries.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+         
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-circle-down"></i> What is EverLast's return policy?</a>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">EverLast would like you to be pleased with your purchase and will gladly refund any unopened or gently used items within 30 days of purchase through our website. EverLast.com purchases cannot be exchanged or returned in-store.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+          
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-circle-down"></i>What do the EverLast perfumes smell like?</a>                     
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">The only EverLast perfume presented in a round bottle, Niche de EverLast is a floral fragrance featuring pink pepper, jasmine and amber patchouli. Heightened with vanilla notes, the scent is bold, fresh and flowery. Inspired by the unpredictability of chance and time, this perfume is a stunning combination of bold notes.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+           
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i>News</a>                               
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">Arden eau de parfume by EverLast is a charming scent with its captivating
+         and unforgettable effect. To bring this perfume alive, We Invited  famous 
+         perfumers to the most loved special creation perfume. This is the brand-new
+         perfume to add to your fragrance collection this season.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+         <!-- Accordion end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Shipments  -->
+
+
+
+<div class="container">
+     <div>
+            <img src="" class=""/>
+            <h1 class="heading text-center" style="font-family:century gothic;font-size: 50px;">
+                 Shipments
+            </h1>
+        </div>
+    <div class="row">
+
+        <div class="col-sm-4 py-2">
+            <div class="card card-body h-100" style="background-color: black;">
+               <img src="Images/ship1.jpg"  style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+
+       
+        <div class="col-sm-4 py-2">
+            <div class="card h-100 card-body" style="background-color: black;">
+                <img src="Images/ship2.jpg" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+
+         <div class="col-sm-4 py-2">
+            <div class="card h-100 card-body" style="background-color: black;">
+                <img src="Images/ship3.jpg" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+
+       
+
+    </div>
+</div>
+
+       <!-- Shipments  -->
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+
+
+      <footer>
+         <div class="container-fluid">
+         <div class="row">
+   
+            <div class="col-lg-4  col-sm-4 col-xs-12 ">
+                <ul class="adress">
+                     <h1 class="footernews text-center text-dark " >NewsLetter</h1>   
+                     <a href="products.html" class="footerbtn">*Your email address</a> 
+                 </ul>
+            </div>
+             <!-- Footer links -->
+            <div class="col-lg-4  col-sm-4 col-xs-12 ">
+               <div class="footer justify-content-center">
+                <ul id="footernav"> 
+                    <li><a href="contact.html">Contact us</a></li>
+                   <li><a href="about-us.html">fAQ</a></li>
+                   <li><a href="testimonies.html">Legal terms and conditions</a></li>
+                   <li><a href="testimonies.html">Product ranking</a></li>
+                </ul>
+               </div>
+            </div>
+
+          <!-- Footer Social -->
+          <div class="col-lg-4  col-sm-4 col-xs-12">
+                <div class="socialmenu text-center">
+                   <h1 class="footersocial text-center text-dark " >Follow us</h1> 
+                      <a href="#"><i class="fa fa-facebook-f fa-2x"></i></a>
+                      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                      <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+                      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                 </div>
+              </div> 
+         </div>
+     </footer>
+
+                    
+            <!-- Footer  end  -->
+
+
+
+         
+</body>
+</html>    

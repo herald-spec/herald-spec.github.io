@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+  <header>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> Homepage </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Js -->
+
+
+
+   <script>
+
+$(document).ready(function(){
+  // Add minus icon for collapse element which is open by default
+  $(".collapse.show").each(function(){
+    $(this).prev(".card-header").addClass("highlight");
+  });
+  
+  // Highlight open collapsed element 
+  $(".card-header .btn").click(function(){
+    $(".card-header").not($(this).parents()).removeClass("highlight");
+    $(this).parents(".card-header").toggleClass("highlight");
+  });
+});
+
+
+$(document).ready(function(){
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $('#back-to-top').fadeIn();
+      } else {
+        $('#back-to-top').fadeOut();
+      }
+    });
+    // scroll body to 0px on click
+    $('#back-to-top').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 400);
+      return false;
+    });
+});
+
+
+
+</script>
+</header>
+
+
+
+<style>
+
+   /********************* Other news Products **********************/
+.product-grid9,.product-grid9 .product-image9{position:relative}
+.product-grid9{font-family:Poppins,sans-serif;z-index:1}
+.product-grid9 .product-image9 a{display:block}
+.product-grid9 .product-image9 img{width:105%;height:auto}
+.product-grid9 .pic-1{opacity:1;transition:all .5s ease-out 0s}
+.product-grid9:hover .pic-1{opacity:0}
+.product-grid9 .pic-2{position:absolute;top:0;left:0;opacity:0;transition:all .5s ease-out 0s}
+.product-grid9:hover .pic-2{opacity:1}
+.product-grid9 .product-full-view{color:#505050;background-color:#fff;font-size:16px;height:45px;width:45px;padding:18px;border-radius:100px 0 0;display:block;opacity:0;position:absolute;right:0;bottom:0;transition:all .3s ease 0s}
+.product-grid9 .product-full-view:hover{color:#c0392b}
+.product-grid9:hover .product-full-view{opacity:1}
+.product-grid9 .product-content{padding:12px 12px 0;overflow:hidden;position:relative}
+.product-content .rating{padding:0;margin:0 0 7px;list-style:none}
+.product-grid9 .rating li{font-size:12px;color:#ffd200;transition:all .3s ease 0s}
+.product-grid9 .rating li.disable{color:rgba(0,0,0,.2)}
+.product-grid9 .title{font-size:16px;font-weight:400;text-transform:capitalize;margin:0 0 3px;transition:all .3s ease 0s}
+.product-grid9 .title a{color:rgba(0,0,0,.5)}
+.product-grid9 .title a:hover{color:#c0392b}
+.product-grid9 .price{color:#000;font-size:17px;margin:0;display:block;transition:all .5s ease 0s}
+.product-grid9:hover .price{opacity:0}
+.product-grid9 .add-to-cart{display:block;color:black;font-weight:600;font-size:17px;opacity:0;position:absolute;left:10px;bottom:-20px;transition:all .5s ease 0s}
+.product-grid9:hover .add-to-cart{opacity:1;bottom:0}
+@media only screen and (max-width:990px){.product-grid9{margin-bottom:0px}
+}
+
+ /********************* Other news Products end**********************/
+
+
+
+/*-- FOR Navigation bar-*/
+body{
+   padding-top:0px;
+   margin-top: 0px;
+   padding: 0;
+}
+
+/*-- FOR Navigation bar end-*/
+
+
+/*-- No icon for dropdown-*/
+.dropdown-toggle::after{ 
+  content: none; 
+}
+
+/*-- No icon for dropdown-*/
+
+
+
+
+
+
+
+
+
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.nav-item.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* Links inside the dropdown */
+
+
+
+
+
+
+
+
+/* search button  */
+
+.custom-search {
+position: absolute;
+left: 20px;
+top: 1px;
+}
+#express-form-typeahead {
+background-color: #D5D8DC;
+background-image: url('Images/srchbtn.png');
+background-position: 5px center;
+background-repeat: no-repeat;
+background-size: 28px 28px;
+border: none;
+cursor: pointer;
+height: 37px;
+margin: 30px 0;
+padding: 0 0 0 34px;
+position: relative;
+-webkit-transition: width 400ms ease, background 400ms ease;
+transition:         width 400ms ease, background 400ms ease;
+width: 10%;  
+}
+#express-form-typeahead:focus {
+background-color: white;
+border: 3px solid black;
+cursor: text;
+outline: 0;
+width: 230px;
+}
+.search-btn {
+  display: none;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+/* search button end */
+
+
+
+
+/**** add to cart NEW  ****/
+
+.product-discount-label{display:block;padding:4px 15px 4px 30px;color:white;background-color:black;position:absolute;top:10px;right:0;-webkit-clip-path:polygon(34% 0,100% 0,100% 100%,0 100%);clip-path:polygon(25% 0,100% 0,100% 100%,0 100%)}
+
+/**** add to cart NEW  ****/
+
+/****add to cart heading gold color bar ****/
+.addtocart {
+  margin-top: 1.5%;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  left: 1%;
+}
+
+.addtocart::after {
+  content: "";
+  width: 80px;
+  position: absolute;
+  height: 6px;
+  border-radius: 1px;
+  background: gold;
+  left: 0;
+  bottom: -15px;
+/****add to cart heading gold color bar ****/
+
+
+
+
+
+
+
+/**** All text in homepage to resize ****/
+@media screen and (min-width:601px){.comptext{font-size: 50px;}}
+@media screen and (max-width:600px){.comptext{font-size: 30px;}}
+
+/**** All text in homepage to resize end ****/
+
+
+
+
+
+
+</style>
+
+
+
+
+<body>
+
+
+              
+
+           
+               <!-- search button -->
+    <div class="span3 widget-span widget-type-raw_html custom-search" style="" data-widget-type="raw_html" data-x="4" data-w="3">
+       <div class="cell-wrapper layout-widget-wrapper">
+           <span id="hs_cos_wrapper_module_14308928327274411" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><form method="GET" action="https://www.shopwithscrip.com/Search?" role="search" class="navbar-form navbar-left ng-pristine ng-valid" id="express-form" novalidate="">
+                <input required="" name="q" placeholder="Search" class="form-control tt-input" id="express-form-typeahead" autocomplete="off" spellcheck="false" dir="auto" type="text">
+                      <button class="search-btn" type="submit"><span class="icon"></span></button>
+                </form>
+          </span>
+       </div>
+    </div>
+               <!-- search button end-->
+
+
+
+
+
+                <!-- Company logo-->
+
+           <div class="mx-auto" style="width: 260px;">
+                <img id="logo-main" src="Images/logofinal.png" style="max-width: 100%; height: auto;"alt=""/>
+            </div>
+
+                <!-- Company logo end-->
+
+
+
+
+
+              <!-- Navigation -->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+ 
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MENU<i class="fa fa-bars"></i></a>
+                <div class="dropdown-menu">
+                    <a href="product-ranking.html" class="dropdown-item">Ranking</a>
+                    <a href="news.html" class="dropdown-item">News</a>
+                    <a href="promo.html" class="dropdown-item">Promos</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+             <li class="nav-item">
+                <a href="index.html" class="nav-link" style="text-transform: uppercase;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about-us.html" class="nav-link" style="text-transform: uppercase;">About</a>
+            </li>
+             <li class="nav-item">
+                <a href="products.html" class="nav-link" style="text-transform: uppercase;">Products</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+             <!-- Navigation end -->
+
+
+        
+
+                   <!-- Carousel banner  --->
+ 
+  
+
+      <div class="col-lg-12">
+
+        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="Images/perfume.png"  style="max-width: 100%; height: auto;" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="Images/banner1.png"  style="max-width: 100%; height: auto;" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="Images/banner2.png"  style="max-width: 100%; height: auto;" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+                   <!-- Carousel banner end -->
+
+
+
+
+
+
+                   <!-- Company background -->
+                     
+        <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-10 mx-auto col-12" style="margin-top: 5%;">
+                  <h3> Company Background</h3>
+                  <p>Everlast perfume brand company has a wide variety of
+                  fragrances with three different sizes 2 oz, 4 oz and 8 oz. The business will work
+                  on various content that produce a unique scents that can last longer, Everlast 
+                  intends to be based in Manila city and established for catering purposes to clients 
+                  of a domestic nature. We do plan to provide consulting services and franchises, in
+                  addition to our products. The company was founded just this year by Herald Condes
+                  starting with a line of variety of products.</p>
+                  </div>
+            </div>
+       </div>
+
+                  <!-- Company background end-->
+
+
+
+
+
+
+
+
+
+                   <!-- Our selection -->
+
+
+
+          
+                 <div class="row ">
+                     <div class="col-lg-6 col-md-10 mx-auto text-center">
+                         <h2 class="comptext" >OUR SELECTION </h2>
+                     </div>
+                 </div>
+          
+          
+        <div class="row">
+         <div class="col-lg-4 col-sm-4 col-xs-12 col-6">
+            <div class="card h-85">
+              <a href="#"><img class="card-img-top" src="Images/prod4.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a>EverLast (2oz)</a>
+                </h4>
+                <h5><strike>₱ 4,700</strike> ₱ 3,290xsmd</h5>
+         <h5>Eau de parfume</h5>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4  col-sm-4 col-xs-12 col-6">
+            <div class="card h-85">
+              <a href="#"><img class="card-img-top" src="Images/prod3.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a>EverLast (8oz)</a>
+                </h4>
+                <h5><strike>₱ 9,100</strike> ₱ 6,370</h5>
+         <h5>Eau de parfume</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4  col-sm-4 col-xs-12 col-6">
+            <div class="card h-85">
+              <a href="#"><img class="card-img-top" src="Images/prod2.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a>EverLast (4oz)</a>
+                </h4>
+                <h5><strike>₱ 6,000</strike> ₱ 4,200</h5>
+                <h5>Eau de parfume</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-12 col-6">
+          </div>
+          <div class="container-fluid" >
+          <a href="products.html" class="button">See more</a>
+        </div>
+          </div>
+            </div>
+          </div>
+
+
+                  <!-- Our selection end -->
+
+
+
+
+              
+                <!-- BACK TO TOP -->
+
+     <a id="back-to-top" href="#" class="btnclick btn-light btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+
+                <!-- BACK TO TOP end-->
+
+
+
+
+
+
+
+
+
+                <!-- Accordion -->
+
+<div class="container-lg">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-title comptext">FAQs</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i>What is it made for?</a>                 
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">The secret to marvelous perfumes is exquisite raw materials. 
+            That is why the highest-quality ingredients for the factory 
+             creations have always been used by EverLast perfume</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+         
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-circle-down"></i> Is it long lasting?</a>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">The EverLast Perfumes have a range of fragrances that you
+            can choose from that have various level of scents intensity. 
+            We have created a special fragrance that suits the seasons to 
+            keep you stands out.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+          
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-circle-down"></i> Promos</a>                     
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">● Receive 2 complimentary samples of your choice with any order<br>
+          ● Enjoy complimentary gift wrapping services<br>
+        ● Recieve complimentary deluxe miniature for orders over ₱ 11,000 </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+           
+              <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i>News</a>                               
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">Arden eau de parfume by EverLast is a charming scent with its captivating
+         and unforgettable effect. To bring this perfume alive, We Invited  famous 
+         perfumers to the most loved special creation perfume. This is the brand-new
+         perfume to add to your fragrance collection this season.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                  <!-- Accordion end-->
+
+
+
+
+
+
+
+                <!-- Other news Products -->
+
+
+                <div class="row ">
+
+                 <div class="col-lg-6 col-md-10 mx-auto text-center">
+                 <h2 class="comptext">OTHER NEWS</h2>
+
+                 </div>
+                 </div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="product-grid9">
+                <div class="product-image9">
+                    <a href="#">
+                        <img class="pic-1" src="Images/azure.jpg">
+                        <img class="pic-2" src="Images/azure.jpg">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <h3 class="title"><a >Mystique</a></h3>
+                    <div class="price"><strike>₱ 9,100</strike> ₱ 6,370</div>
+                    <a class="add-to-cart" href="">DISCOVER</a>
+                </div>
+            </div>
+        </div> 
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="product-grid9">
+                <div class="product-image9">
+                    <a href="#">
+                       <span class="product-discount-label">New</span>
+                        <img class="pic-1" src="Images/9.jpeg">
+                        <span class="product-discount-label">New </span>
+                        <img class="pic-2" src="Images/9.jpeg">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star disable"></li>
+                        <li class="fa fa-star disable"></li>
+                    </ul>
+                    <h3 class="title"><a >Arden - New release</a></h3>
+                    <div class="price">₱ 4,300</div>
+                    <a class="add-to-cart" href="">DISCOVER</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="product-grid9">
+                <div class="product-image9">
+                    <a href="#">
+                        <img class="pic-1" src="Images/6.jpeg">
+                        <img class="pic-2" src="Images/6.jpeg">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <h3 class="title"><a >Miracle</a></h3>
+                    <div class="price">₱ 5,000</div>
+                    <a class="add-to-cart" href="">DISCOVER</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="product-grid9">
+                <div class="product-image9">
+                    <a href="#">
+                        <img class="pic-1" src="Images/7.jpeg">
+                        <img class="pic-2" src="Images/7.jpeg">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <h3 class="title"><a >Top1 Bargello</a></h3>
+                    <div class="price"><strike>₱ 6,400</strike> ₱ 4,480</div>
+                    <a class="add-to-cart" href="">DISCOVER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+ <a href="products.html" class="button">Discover</a>
+
+
+                   <!-- Other news Products end -->
+
+
+
+
+
+
+
+                   <!-- Our Product add to cart  -->
+
+  <div class="container" style="margin-bottom: 5%;">
+      <div class="container-fliud">
+        <div class="wrapper row">
+          <div class="preview col-md-6">
+            <div class="preview-pic tab-content">
+              <div class="tab-pane active" ><img src="Images/addtocarthomepage.png" /></div>
+            </div>
+          </div>
+
+          <div class="details col-md-6">
+            <h3 class="addtocart" style="font-family: arial;text-transform: uppercase;margin-top: 5%;margin-left: 2%;">Buy Arden - New Release</h3>  
+                <div class="container">
+           
+           
+
+           <h4 style="margin-top: 15%;">₱ 4,500</h4>
+            <h4>Intensity ●●●●●</h4>
+          
+          
+            <div class="action">
+              <button class="add-to-cart btn btn-outline-warning btn-lg btn-block" type="button" style="margin-top: 10%;">Add to cart</button>
+               <button class="add-to-cart btn btn-warning btn-lg btn-block" type="button" style="margin-top: 3%;">Buy it now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+                 <!-- Our Product add to cart end -->
+    
+   
+
+
+
+   <!-- Footer -->
+
+
+      <footer>
+         <div class="container-fluid">
+         <div class="row">
+   
+            <div class="col-sm-4 col-xs-6 col-md-4">
+                <ul class="adress">
+                     <h1 class="footernews text-center text-dark " >NewsLetter</h1>   
+                     <a href="products.html" class="footerbtn">*Your email address</a> 
+                 </ul>
+            </div>
+
+             <!-- Footer links -->
+            <div class="col-sm-4 col-xs-6 col-md-4">
+               <div class="footer">
+                <ul id="footernav"> 
+                    <li><a href="contact.html">Contact us</a></li>
+                   <li><a href="about-us.html">fAQ</a></li>
+                   <li><a href="testimonies.html">Legal terms and conditions</a></li>
+                   <li><a href="testimonies.html">Product ranking</a></li>
+                </ul>
+               </div>
+            </div>
+
+          <!-- Footer Social -->
+            <div class="col-sm-4 col-xs-6 col-md-4">
+                <div class="socialmenu text-center">
+                   <h1 class="footersocial text-center text-dark " >Follow us</h1> 
+                      <a href="#"><i class="fa fa-facebook-f fa-2x"></i></a>
+                      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                      <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+                      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+           </div> 
+
+         </div>
+       </div>
+     </footer>
+
+              <!-- Footer -->
+
+
+
+ 
+          <script src="vendor/jquery/jquery.min.js"></script>
+          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+
+</body>
+
+</html>

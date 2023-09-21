@@ -1,0 +1,337 @@
+
+
+/***** Mixed Css in all pages *****/
+ html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 50px;
+}
+
+.brand {
+  transform: translateX(-50%);
+  right: 44%;
+  position: absolute;
+  top: 10%;
+}
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  text-transform: ultra-expanded;
+  font-family: Cochin Regular;
+  font-size: 35px;
+}
+p {
+  line-height: 1.5;
+  margin-top: 100%;
+  margin: 50px 0;
+  text-align: justify;
+  font-size: 20px;
+  font-family: gothic;
+}
+h2{
+  font-size: 40px;
+  font-family: Cochin Regular;
+  margin-bottom: 15%;
+  margin-top: 15%;
+}
+.button
+{
+	font-family: arial;
+	width: 150px;
+  height: 60px;
+	border-radius:  80px;
+	line-height: 60px;
+	text-align: center;
+	border: 1px solid #090404;
+	display:block;
+	text-decoration: none;
+	margin: 50px auto;
+	color: #FEFEFE;
+	background:  #090404;
+}
+.row.no-gutter{
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+
+
+
+/* Index ACCORDION LATEST */
+.collapsible-link[aria-expanded='true']::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded='true']::before {
+  transform: rotate(180deg);
+}
+.container-lg{
+  margin-top: 1.5%;
+  background-color: #F8F9F9;
+}
+.accordion .card {
+  background: none;
+  border: none;
+  margin-top: 0px;
+}
+.accordion .card .card-header {
+  background: none;
+  border: none;
+  padding: .4rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.accordion .card-header h2 span {
+  float: left;
+  margin-top: 0px;
+ 
+}
+.accordion .card-header .btn {
+  color: #2f2f31;
+  font-size: 1.04rem;
+  text-align: left;
+  position: relative;
+  font-weight: 500;
+  padding-left: 2rem;
+  
+}
+.accordion .card-header i {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  
+}
+.accordion .card-header .btn:hover {
+  color: #ff8300;
+  text-decoration: none;
+}
+.accordion .card-body {
+  color: #324353;
+  padding: 0.5rem 3rem;
+}
+.page-title {
+  margin-top: 1.5%;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  left: 1%;
+}
+
+.page-title::after {
+  content: "";
+  width: 80px;
+  position: absolute;
+  height: 4px;
+  border-radius: 1px;
+  background: #73bb2b;
+  left: 0;
+  bottom: -15px;
+}
+.accordion .highlight .btn {
+  color: #74bd30;
+}
+.accordion .highlight i {
+  transform: rotate(180deg);
+}
+#headingOne{
+  margin-top: 5%;
+}
+/* Index ACCORDION LATEST end*/
+
+
+
+
+
+
+
+/* Index carousel add to cart */
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+.image{
+  float: right;
+  height: 400px;
+  width: 400px;
+  margin-bottom: 5%;
+  transform: translate(-5% ,-1%);
+  border-radius: 5%;
+}
+.addtocarttt{
+  float: right;
+  transform: translate(20% ,-1%);
+}
+
+
+/* Index carousel add to cart */
+
+
+
+
+/* Index back to top*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    display: ruby-text;
+    border: 1px solid black;
+    border-radius: 80%;
+}
+
+/* Index back to top end*/
+
+
+
+
+
+
+/* Index Footer */
+footer{
+     background-color: #F2F4F4;
+     padding:70px 10px;
+}        
+
+footer ul li{
+    padding:none;
+}
+
+.adress span , .contact span , .social span{
+   color: #FFF; 
+   font-weight: 800; 
+   padding-bottom: 10px; 
+   margin-bottom: 20px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 3px;
+}
+.footernews{
+  margin-right:45px;
+}
+.adress li p , .contact li a , .social li a{
+    color:#FFF;
+    letter-spacing: 2px;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.social li{
+    float:left;
+}
+
+.footerbtn
+{
+  font-family: arial;
+  width: 80%;
+  height: 60px;
+  border-radius:  80px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid black;
+  display:block;
+  text-decoration: none;
+  margin: 1px auto;
+  color: black;
+  background:  transparent;
+  float: center;
+   margin-left: 10px;
+}
+.adress a{
+  text-decoration: none;
+}
+
+.navvii span {
+  color: black;
+ }
+
+ .footer ul li a {
+  font-size: 18px;
+ }
+.footer a{
+  text-decoration: none;
+}
+.footer  a, .footer p a:visited {
+    color: black !important;
+}
+
+.footer a:hover, .footer p a:active {
+    color: blue !important;
+}
+
+.footer .active a {
+    color: white !important;
+}
+.footer li{
+  font-family: century gothic;
+  top: 20%;
+  width: 250px;
+  height: 40px;
+  line-height: 70px;
+  text-align: center;
+  margin: 1px auto;
+  background:  transparent;
+  color: #BBBBBB;
+  list-style-type: none;
+  margin-left: 50px;
+}
+.footersocial {
+  text-decoration: overline;
+  font-size: 30px;
+  font-family: gothic;
+}
+
+.footersocial a{
+  list-style-type: none;
+}
+
+ .socialmenu
+{
+  text-align: center;
+}
+.socialmenu a
+{
+   display: inline-flex;
+   width: 50px;
+   height: 50px;
+   background: grey;
+   color:white;
+   margin: 0 10px;
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+   text-decoration:none;
+}
+.socialmenu h2
+{   
+  position:top ;
+  left: 20%;
+  text-align: center;
+  font-family: sans serif;
+  padding: 8px 40px;
+  font-size: 1.28571em;
+  text-transform: uppercase;
+  margin: 1 10px;
+}
+
+
+
+
+
+
+/* PRODUCTS BANNER  */
+
+.container {
+margin-top: 2%;
+}
+
+/* PRODUCTS BANNER END */
+
+
+
+
