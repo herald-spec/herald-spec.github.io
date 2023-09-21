@@ -2,645 +2,574 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Produtcs</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   
+  <title>Produtcs</title>
 
 <style>
-
-
-
-/********************* Our Products **********************/
-.product-grid8{
-  font-family:Poppins,sans-serif;position:relative;z-index:1
-}
-.product-grid8 .product-image8{
-  border:1px solid #e4e9ef;position:relative;transition:all .3s ease 0s
-}
-.product-grid8:hover .product-image8{
-  box-shadow:0 0 10px rgba(0,0,0,.15)
-}
-.product-grid8 .product-image8 a{display:block
-}
-.product-grid8 .product-image8 img{width:100%;height:auto
-}
-.product-grid8 .pic-1{
-  opacity:1;transition:all .5s ease-out 0s
-}
-.product-grid8:hover .pic-1{
-  opacity:0
-}
-.product-grid8 .pic-2{
-  opacity:0;position:absolute;top:0;left:0;transition:all .5s ease-out 0s
-}
-.product-grid8:hover .pic-2{
-  opacity:1
-}
-.product-grid8 .social{
-  padding:0;margin:0;list-style:none;position:absolute;bottom:13px;right:13px;z-index:1
-}
-.product-grid8 .social li{
-  opacity:0;transform:translateY(3px);transition:all .5s ease 0s
-}
-.product-grid8:hover .social li{
-  margin:0 0 10px;opacity:1;transform:translateY(0)
-}
-.product-grid8:hover .social li:nth-child(1){
-  transition-delay:.1s}
-.product-grid8:hover .social li:nth-child(2){
-  transition-delay:.2s}
-.product-grid8:hover .social li:nth-child(3){
-  transition-delay:.4s}
-.product-grid8 .social li a{
-  color:grey;font-size:17px;line-height:40px;text-align:center;height:40px;width:40px;border:1px solid grey;display:block;transition:all .5s ease-in-out}
-.product-grid8 .social li a:hover{
-  color:#000;border-color:#000}
-.product-grid8 .product-discount-label{
-  display:block;padding:4px 15px 4px 30px;color:white;background-color:black;position:absolute;top:10px;right:0;-webkit-clip-path:polygon(34% 0,100% 0,100% 100%,0 100%);clip-path:polygon(25% 0,100% 0,100% 100%,0 100%)}
-.product-grid8 .product-content{
-  padding:20px 0 0}
-.product-grid8 .price{
-  color:#000;font-size:19px;font-weight:400;margin-bottom:8px;text-align:left;transition:all .3s}
-.product-grid8 .price span{
-  color:#999;font-size:14px;font-weight:500;text-decoration:line-through;margin-left:7px;display:inline-block}
-.product-grid8 .product-shipping{
-  color:rgba(0,0,0,.5);font-size:15px;padding-left:35px;margin:0 0 15px;display:block;position:relative}
-.product-grid8 .product-shipping:before{
-  content:'';height:1px;width:25px;background-color:rgba(0,0,0,.5);transform:translateY(-50%);position:absolute;top:50%;left:0}
-.product-grid8 .title{
-  font-size:16px;font-weight:400;text-transform:capitalize;margin:0 0 30px;transition:all .3s ease 0s}
-.product-grid8 .title a{
-  color:#000}
-.product-grid8 .title a:hover{
-  color:#0081c2}
-.product-grid8 .all-deals{
-  display:block;color:#fff;background-color:#2e353b;font-size:15px;letter-spacing:1px;text-align:center;text-transform:uppercase;padding:22px 5px;transition:all .5s ease 0s}
-.product-grid8 .all-deals .icon{
-  margin-left:7px}
-.product-grid8 .all-deals:hover{
-  background-color:#0081c2}
-@media only screen and (max-width:990px){
-  .product-grid8{margin-bottom:30px}
-}
-
-/********************* Our Products end **********************/
-
-
-
-
-/********************* Our Selection **********************/
-.heading.h2 {
-  color: #000;
-  font-size: 26px;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  margin: 50px 0 80px;
-}
-
-h2::after {
-  content: "";
-  width: 200px;
-  position: absolute;
-  margin: 0 auto;
-  height: 5px;
-  background: green;
-  left: 0;
-  right: 0;
-  bottom: -140px;
-}
-/********************* Our Selection end**********************/
-
-
-
-
-
-/* to remove space on top  */
-body{
-   padding-top:0px;
-   margin-top: 0px;
-   padding: 0;
-}
-
-/* to remove space on top  */
-
-
-
-
-
-
-
-/*****************Our selection grid*************/
-
-img {
-  max-width: 100%; 
-}
-.card {
-  margin-top: 50px;
-  background: white;
-  padding: 3em;
-  line-height: 1.5em; 
-}
-@media screen and (min-width: 997px) {
-.wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; 
-    } 
+  /********************* Our Products **********************/
+  .product-grid8{
+    font-family:Poppins,sans-serif;position:relative;z-index:1
   }
-.product-title, .price, .sizes, .colors {
-  text-transform: UPPERCASE;
-  font-weight: bold;
-   }
-
-.checked, .price span {
-  color: #ff9f1a; 
-}
-.product-title, .rating, .product-description, .price, .vote, .sizes {
-  margin-bottom: 0px; 
-  margin-top: 3%;
-}
-.product-title {
-  margin-top: 0; 
-}
-.size {
-  margin-right: 10px; 
-}
-.size:first-of-type {
-    margin-left: 40px; 
-}
-
-.color {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  height: 2em;
-  width: 2em;
-  border-radius: 2px; 
-}
-  .color:first-of-type {
-    margin-left: 20px; 
-}
-.add-to-cart, .like {
-  background: #ff9f1a;
-  padding: 1.2em 1.5em;
-  border: none;
-  text-transform: UPPERCASE;
-  font-weight: bold;
-  color: #fff;
-  -webkit-transition: background .3s ease;
-  transition: background .3s ease; 
-}
-.add-to-cart:hover, .like:hover {
-    background: #b36800;
-    color: #fff; 
-}
-.not-available {
-  text-align: center;
-  line-height: 2em; 
-}
-.not-available:before {
-    font-family: fontawesome;
-    content: "\f00d";
-    color: #fff; 
-}
-
-.orange {
-  background: #ff9f1a; 
-}
-.green {
-  background: #85ad00; 
+  .product-grid8 .product-image8{
+    border:1px solid #e4e9ef;position:relative;transition:all .3s ease 0s
   }
-.blue {
-  background: #0076ad; 
-}
-.tooltip-inner {
-  padding: 1.3em; 
-}
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(3);
-            transform: scale(3); }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+  .product-grid8:hover .product-image8{
+    box-shadow:0 0 10px rgba(0,0,0,.15)
+  }
+  .product-grid8 .product-image8 a{display:block
+  }
+  .product-grid8 .product-image8 img{width:100%;height:auto
+  }
+  .product-grid8 .pic-1{
+    opacity:1;transition:all .5s ease-out 0s
+  }
+  .product-grid8:hover .pic-1{
+    opacity:0
+  }
+  .product-grid8 .pic-2{
+    opacity:0;position:absolute;top:0;left:0;transition:all .5s ease-out 0s
+  }
+  .product-grid8:hover .pic-2{
+    opacity:1
+  }
+  .product-grid8 .social{
+    padding:0;margin:0;list-style:none;position:absolute;bottom:13px;right:13px;z-index:1
+  }
+  .product-grid8 .social li{
+    opacity:0;transform:translateY(3px);transition:all .5s ease 0s
+  }
+  .product-grid8:hover .social li{
+    margin:0 0 10px;opacity:1;transform:translateY(0)
+  }
+  .product-grid8:hover .social li:nth-child(1){
+    transition-delay:.1s}
+  .product-grid8:hover .social li:nth-child(2){
+    transition-delay:.2s}
+  .product-grid8:hover .social li:nth-child(3){
+    transition-delay:.4s}
+  .product-grid8 .social li a{
+    color:grey;font-size:17px;line-height:40px;text-align:center;height:40px;width:40px;border:1px solid grey;display:block;transition:all .5s ease-in-out}
+  .product-grid8 .social li a:hover{
+    color:#000;border-color:#000}
+  .product-grid8 .product-discount-label{
+    display:block;padding:4px 15px 4px 30px;color:white;background-color:black;position:absolute;top:10px;right:0;-webkit-clip-path:polygon(34% 0,100% 0,100% 100%,0 100%);clip-path:polygon(25% 0,100% 0,100% 100%,0 100%)}
+  .product-grid8 .product-content{
+    padding:20px 0 0}
+  .product-grid8 .price{
+    color:#000;font-size:19px;font-weight:400;margin-bottom:8px;text-align:left;transition:all .3s}
+  .product-grid8 .price span{
+    color:#999;font-size:14px;font-weight:500;text-decoration:line-through;margin-left:7px;display:inline-block}
+  .product-grid8 .product-shipping{
+    color:rgba(0,0,0,.5);font-size:15px;padding-left:35px;margin:0 0 15px;display:block;position:relative}
+  .product-grid8 .product-shipping:before{
+    content:'';height:1px;width:25px;background-color:rgba(0,0,0,.5);transform:translateY(-50%);position:absolute;top:50%;left:0}
+  .product-grid8 .title{
+    font-size:16px;font-weight:400;text-transform:capitalize;margin:0 0 30px;transition:all .3s ease 0s}
+  .product-grid8 .title a{
+    color:#000}
+  .product-grid8 .title a:hover{
+    color:#0081c2}
+  .product-grid8 .all-deals{
+    display:block;color:#fff;background-color:#2e353b;font-size:15px;letter-spacing:1px;text-align:center;text-transform:uppercase;padding:22px 5px;transition:all .5s ease 0s}
+  .product-grid8 .all-deals .icon{
+    margin-left:7px}
+  .product-grid8 .all-deals:hover{
+    background-color:#0081c2}
+  @media only screen and (max-width:990px){
+    .product-grid8{margin-bottom:30px}
+  }
+  /********************* Our Selection **********************/
+  .heading.h2 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 50px 0 80px;
+  }
+  h2::after {
+    content: "";
+    width: 200px;
+    position: absolute;
+    margin: 0 auto;
+    height: 5px;
+    background: green;
+    left: 0;
+    right: 0;
+    bottom: -140px;
+  }
+  /* to remove space on top  */
+  body{
+    padding-top:0px;
+    margin-top: 0px;
+    padding: 0;
+  }
+  /*****************Our selection grid*************/
+  img {
+    max-width: 100%; 
+  }
+  .card {
+    margin-top: 50px;
+    background: white;
+    padding: 3em;
+    line-height: 1.5em; 
+  }
+  @media screen and (min-width: 997px) {
+  .wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; 
+      } 
+    }
+  .product-title, .price, .sizes, .colors {
+    text-transform: UPPERCASE;
+    font-weight: bold;
+  }
+  .checked, .price span {
+    color: #ff9f1a; 
+  }
+  .product-title, .rating, .product-description, .price, .vote, .sizes {
+    margin-bottom: 0px; 
+    margin-top: 3%;
+  }
+  .product-title {
+    margin-top: 0; 
+  }
+  .size {
+    margin-right: 10px; 
+  }
+  .size:first-of-type {
+      margin-left: 40px; 
+  }
+  .color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 2em;
+    width: 2em;
+    border-radius: 2px; 
+  }
+    .color:first-of-type {
+      margin-left: 20px; 
+  }
+  .add-to-cart, .like {
+    background: #ff9f1a;
+    padding: 1.2em 1.5em;
+    border: none;
+    text-transform: UPPERCASE;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease; 
+  }
+  .add-to-cart:hover, .like:hover {
+      background: #b36800;
+      color: #fff; 
+  }
+  .not-available {
+    text-align: center;
+    line-height: 2em; 
+  }
+  .not-available:before {
+      font-family: fontawesome;
+      content: "\f00d";
+      color: #fff; 
+  }
 
-@keyframes opacity {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(3);
-            transform: scale(3); }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+  .orange {
+    background: #ff9f1a; 
+  }
+  .green {
+    background: #85ad00; 
+    }
+  .blue {
+    background: #0076ad; 
+  }
+  .tooltip-inner {
+    padding: 1.3em; 
+  }
+  @-webkit-keyframes opacity {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(3);
+              transform: scale(3); }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); } 
+  }
 
-/*****************Our selection grid end*************/
-
-
-
-
-/****Our Selection title ****/
-.productstitle {
-  margin-top: 1.5%;
-  padding: 0;
-  border: 0;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  left: 1%;
-}
-
-.productstitle::after {
-  content: "";
-  width: 20%;
-  position: absolute;
-  height: 5px;
-  border-radius: 1px;
-  background: green;
-  left: 0;
-  bottom: -15px;
-/****Our Selection title end****/
-
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(3);
+              transform: scale(3); }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); } 
+  }
+  /****Our Selection title ****/
+  .productstitle {
+    margin-top: 1.5%;
+    padding: 0;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    left: 1%;
+  }
+  .productstitle::after {
+    content: "";
+    width: 20%;
+    position: absolute;
+    height: 5px;
+    border-radius: 1px;
+    background: green;
+    left: 0;
+    bottom: -15px;
+  }
 </style>
 </head>
-
-
-
-
-
-
 <body>
-
-
-
                 <!-- Navigation -->
+                <div class="mx-auto" style="width: 250px;">
+                  <img id="logo-main" src="Images/logofinal.png" style="max-width: 100%; height: auto;"alt=""/>
+                </div>
 
-            <div class="mx-auto" style="width: 250px;">
-              <img id="logo-main" src="Images/logofinal.png" style="max-width: 100%; height: auto;"alt=""/>
-            </div>
 
-
-<nav class="navbar navbar-light navbar-expand-md bg-light" >
-    <div class="container" style="margin-top: 0;"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" ><span class="navbar-toggler-icon" ></span></button>
-        <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav flex-grow-1 justify-content-between">
-                
-                <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">ABout</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="products.html">Product</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="product-ranking.html">Ranking</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="promo.html">Promo</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="news.html">News</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="practice.html">Contact</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+                <nav class="navbar navbar-light navbar-expand-md bg-light" >
+                    <div class="container" style="margin-top: 0;"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" ><span class="navbar-toggler-icon" ></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-1">
+                            <ul class="nav navbar-nav flex-grow-1 justify-content-between">
+                                
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">ABout</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="products.html">Product</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="product-ranking.html">Ranking</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="promo.html">Promo</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="news.html">News</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="practice.html">Contact</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
               <!-- Navigation end -->
 
 
 
 
-
-
               <!-- Products banner -->
-
-       <div class="container text-center col-lg-12  col-md-12 col-sm-12 col-xs-12">
-           <img src="Images/promobanner.png" class="img-fluid text-center" width="100%" alt="Responsive image">
-       </div>
- 
+                <div class="container text-center col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                    <img src="Images/promobanner.png" class="img-fluid text-center" width="100%" alt="Responsive image">
+                </div>
               <!-- Products banner -->
-        
-
-
-
-
-
 
 
 
 
 
               <!----- Our Product ---->
+                <div class="container">
+                      <div>
+                            <img src="" class=""/>
+                            <h2 class="productstitle text-center" style="font-family:century gothic;font-size: 50px;margin-top: 1%;margin-bottom: 1%;">
+                                Our Selection
+                            </h2>
+                        </div>
+                        
+                  
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-6">
+                            <div class="product-grid8" style="margin-top: 10%;">
+                                <div class="product-image8">
+                                    <a href="#">
+                                        <img class="pic-1" src=Images/lacoste.jpg>
+                                        <img class="pic-2" src=Images/lacoste.jpg>
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" class="fa fa-search"></a></li>
+                                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="product-content">
+                                    <div class="price">₱ 3,500
+                                      
+                                    </div>
+                                    <span class="product-shipping">Eau de parfume</span>
+                                    <h3 class="title"><a href="#">Suave</a></h3>
+                                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="container">
-       <div>
-            <img src="" class=""/>
-            <h2 class="productstitle text-center" style="font-family:century gothic;font-size: 50px;margin-top: 1%;margin-bottom: 1%;">
-                 Our Selection
-            </h2>
-        </div>
-        
-   
-    <div class="row">
-        <div class="col-md-4 col-sm-6 col-6">
-            <div class="product-grid8" style="margin-top: 10%;">
-                <div class="product-image8">
-                    <a href="#">
-                        <img class="pic-1" src=Images/lacoste.jpg>
-                        <img class="pic-2" src=Images/lacoste.jpg>
-                    </a>
-                    <ul class="social">
-                        <li><a href="" class="fa fa-search"></a></li>
-                        <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
-                    </ul>
-                    
-                </div>
-                <div class="product-content">
-                    <div class="price">₱ 3,500
-                       
+
+                        <div class="col-md-4 col-sm-6 col-6">
+                            <div class="product-grid8" style="margin-top: 10%;">
+                                <div class="product-image8">
+                                    <a href="#">
+                                        <img class="pic-1" src=Images/victoria.jpg>
+                                        <img class="pic-2" src=Images/victoria.jpg>
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" class="fa fa-search"></a></li>
+                                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="product-content">
+                                    <div class="price">₱ 6,700
+                                      
+                                    </div>
+                                    <span class="product-shipping">Eau de parfume</span>
+                                    <h3 class="title"><a href="#">Geehan</a></h3>
+                                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-6 col-6">
+                            <div class="product-grid8" style="margin-top: 10%;">
+                                <div class="product-image8">
+                                    <a href="#">
+                                        <img class="pic-1" src=Images/azure.jpg>
+                                        <img class="pic-2" src=Images/azure.jpg>
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" class="fa fa-search"></a></li>
+                                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="product-content">
+                                    <div class="price">₱ 6,000
+                                      
+                                    </div>
+                                    <span class="product-shipping">Eau de toilette</span>
+                                    <h3 class="title"><a href="#">Mystique</a></h3>
+                                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                          <div class="col-md-4 col-sm-6 col-6">
+                            <div class="product-grid8" style="margin-top: 10%;">
+                                <div class="product-image8">
+                                    <a href="#">
+                                        <img class="pic-1" src=Images/arden.jpg>
+                                        <img class="pic-2" src=Images/arden.jpg>
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" class="fa fa-search"></a></li>
+                                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="product-content">
+                                    <div class="price">₱ 8,950
+                                      
+                                    </div>
+                                    <span class="product-shipping">Eau de toilette</span>
+                                    <h3 class="title"><a href="#">PACO (8oz)</a></h3>
+                                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-6 col-6">
+                            <div class="product-grid8" style="margin-top: 10%;">
+                                <div class="product-image8">
+                                    <a href="#">
+                                      <span class="product-discount-label">New</span>
+                                        <img class="pic-1" src=Images/9.jpeg>
+                                        <span class="product-discount-label">New</span>
+                                        <img class="pic-2" src=Images/9.jpeg>
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" class="fa fa-search"></a></li>
+                                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="product-content">
+                                    <div class="price">₱ 4,300
+                                      
+                                    </div>
+                                    <span class="product-shipping">Eau de toilette</span>
+                                    <h3 class="title"><a href="#">ARDEN (2oz) - New release</a></h3>
+                                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-6 col-6">
+                            <div class="product-grid8" style="margin-top: 10%;">
+                                <div class="product-image8">
+                                    <a href="#">
+                                        <img class="pic-1" src=Images/7.jpeg>
+                                        <img class="pic-2" src=Images/7.jpeg>
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="" class="fa fa-search"></a></li>
+                                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="product-content">
+                                    <div class="price">₱ 6,400
+                                      
+                                    </div>
+                                    <span class="product-shipping">Eau de parfume</span>
+                                    <h3 class="title"><a href="#">Bargello</a></h3>
+                                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <span class="product-shipping">Eau de parfume</span>
-                    <h3 class="title"><a href="#">Suave</a></h3>
-                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
                 </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-4 col-sm-6 col-6">
-            <div class="product-grid8" style="margin-top: 10%;">
-                <div class="product-image8">
-                    <a href="#">
-                        <img class="pic-1" src=Images/victoria.jpg>
-                        <img class="pic-2" src=Images/victoria.jpg>
-                    </a>
-                    <ul class="social">
-                        <li><a href="" class="fa fa-search"></a></li>
-                        <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
-                    </ul>
-                    
-                </div>
-                <div class="product-content">
-                    <div class="price">₱ 6,700
-                       
-                    </div>
-                    <span class="product-shipping">Eau de parfume</span>
-                    <h3 class="title"><a href="#">Geehan</a></h3>
-                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-4 col-sm-6 col-6">
-            <div class="product-grid8" style="margin-top: 10%;">
-                <div class="product-image8">
-                    <a href="#">
-                        <img class="pic-1" src=Images/azure.jpg>
-                        <img class="pic-2" src=Images/azure.jpg>
-                    </a>
-                    <ul class="social">
-                        <li><a href="" class="fa fa-search"></a></li>
-                        <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
-                    </ul>
-                    
-                </div>
-                <div class="product-content">
-                    <div class="price">₱ 6,000
-                       
-                    </div>
-                    <span class="product-shipping">Eau de toilette</span>
-                    <h3 class="title"><a href="#">Mystique</a></h3>
-                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
-                </div>
-            </div>
-        </div>
-
-
-
-          <div class="col-md-4 col-sm-6 col-6">
-            <div class="product-grid8" style="margin-top: 10%;">
-                <div class="product-image8">
-                    <a href="#">
-                        <img class="pic-1" src=Images/arden.jpg>
-                        <img class="pic-2" src=Images/arden.jpg>
-                    </a>
-                    <ul class="social">
-                        <li><a href="" class="fa fa-search"></a></li>
-                        <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
-                    </ul>
-                    
-                </div>
-                <div class="product-content">
-                    <div class="price">₱ 8,950
-                       
-                    </div>
-                    <span class="product-shipping">Eau de toilette</span>
-                    <h3 class="title"><a href="#">PACO (8oz)</a></h3>
-                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-4 col-sm-6 col-6">
-            <div class="product-grid8" style="margin-top: 10%;">
-                <div class="product-image8">
-                    <a href="#">
-                       <span class="product-discount-label">New</span>
-                        <img class="pic-1" src=Images/9.jpeg>
-                         <span class="product-discount-label">New</span>
-                        <img class="pic-2" src=Images/9.jpeg>
-                    </a>
-                    <ul class="social">
-                        <li><a href="" class="fa fa-search"></a></li>
-                        <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
-                    </ul>
-                    
-                </div>
-                <div class="product-content">
-                    <div class="price">₱ 4,300
-                       
-                    </div>
-                    <span class="product-shipping">Eau de toilette</span>
-                    <h3 class="title"><a href="#">ARDEN (2oz) - New release</a></h3>
-                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
-                </div>
-            </div>
-        </div>
-
-
-         <div class="col-md-4 col-sm-6 col-6">
-            <div class="product-grid8" style="margin-top: 10%;">
-                <div class="product-image8">
-                    <a href="#">
-                        <img class="pic-1" src=Images/7.jpeg>
-                        <img class="pic-2" src=Images/7.jpeg>
-                    </a>
-                    <ul class="social">
-                        <li><a href="" class="fa fa-search"></a></li>
-                        <li><a href="" class="fa fa-shopping-bag"></a></li>
-                        <li><a href="" class="fa fa-shopping-cart"></a></li>
-                    </ul>
-                    
-                </div>
-                <div class="product-content">
-                    <div class="price">₱ 6,400
-                       
-                    </div>
-                    <span class="product-shipping">Eau de parfume</span>
-                    <h3 class="title"><a href="#">Bargello</a></h3>
-                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</div>
-<hr>
-
+              <hr>
               <!-- Our Product end  -->
 
 
 
 
 
-               <!-- Our Product add to cart  -->
+              <!-- Our Product add to cart  -->
 
-  <div class="container">
-    <div class="card">
-      <div class="container-fliud">
-        <div class="wrapper row">
-          <div class="preview col-md-6 col-12">
-            
-            <div class="preview-pic tab-content">
-              <div class="tab-pane active" id="pic-1"><img src="Images/Niche.png" /></div>
-              <div class="tab-pane" id="pic-2"><img src="Images/Niche.png"  /></div>
-              <div class="tab-pane" id="pic-3"><img src="Images/Niche.png"  /></div>
-              <div class="tab-pane" id="pic-4"><img src="Images/Niche.png"  /></div>
-              <div class="tab-pane" id="pic-5"><img src="Images/Niche.png"  /></div>
-            </div>
-          
-            
-          </div>
-          <div class="details col-md-6 col-12">
-            <h3 class="product-title">Niche de EverLast</h3>
-            <div class="rating">
-              <div class="stars">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+              <div class="container">
+                <div class="card">
+                  <div class="container-fliud">
+                    <div class="wrapper row">
+                      <div class="preview col-md-6 col-12">
+                        
+                        <div class="preview-pic tab-content">
+                          <div class="tab-pane active" id="pic-1"><img src="Images/Niche.png" /></div>
+                          <div class="tab-pane" id="pic-2"><img src="Images/Niche.png"  /></div>
+                          <div class="tab-pane" id="pic-3"><img src="Images/Niche.png"  /></div>
+                          <div class="tab-pane" id="pic-4"><img src="Images/Niche.png"  /></div>
+                          <div class="tab-pane" id="pic-5"><img src="Images/Niche.png"  /></div>
+                        </div>
+                      
+                        
+                      </div>
+                      <div class="details col-md-6 col-12">
+                        <h3 class="product-title">Niche de EverLast</h3>
+                        <div class="rating">
+                          <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <span class="review-no">365 reviews</span>
+                        </div>
+                      <div class="container">
+                      
+                      <h4><span class="badge badge-secondary" style="margin-bottom: 1%;margin-top: 1%;">Eau de Cologne</span><span style="font-size: 22px;">5-15% of perfume oil.</span></h4>
+                      <h4><span class="badge badge-warning" style="margin-bottom: 1%;">Eau de Parfum </span><span style="font-size: 22px;">10-20% of perfume oil</span></h4>
+                      <h4><span class="badge badge-danger" style="margin-bottom: 1%;">Eau de Toilette </span><span style="font-size: 22px;">5-15% of perfume oil</span></h4>
+
+                      <h3 style="font-size: 24px;">Intensity bar</h3>
+                      <div class="progress">
+                        <div class="progress-bar  progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:70%" role="progressbar" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                        <h3><span class="badge badge-warning" style="margin-bottom: 5%;margin-top: 10%;">current price: </span><span style="font-size: 22px;">₱ 6,265 </span></h3>
+                        <div class="action">
+                          <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <span class="review-no">365 reviews</span>
-            </div>
-           <div class="container">
-           
-           <h4><span class="badge badge-secondary" style="margin-bottom: 1%;margin-top: 1%;">Eau de Cologne</span><span style="font-size: 22px;">5-15% of perfume oil.</span></h4>
-           <h4><span class="badge badge-warning" style="margin-bottom: 1%;">Eau de Parfum </span><span style="font-size: 22px;">10-20% of perfume oil</span></h4>
-           <h4><span class="badge badge-danger" style="margin-bottom: 1%;">Eau de Toilette </span><span style="font-size: 22px;">5-15% of perfume oil</span></h4>
-
-           <h3 style="font-size: 24px;">Intensity bar</h3>
-           <div class="progress">
-             <div class="progress-bar  progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width:70%" role="progressbar" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-          </div>
-            <h3><span class="badge badge-warning" style="margin-bottom: 5%;margin-top: 10%;">current price: </span><span style="font-size: 22px;">₱ 6,265 </span></h3>
-            <div class="action">
-              <button class="add-to-cart btn btn-default" type="button">add to cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-                 <!-- Our Product add to cart end -->
+                <!-- Our Product add to cart end -->
 
 
 
 
 
 
-                 <!-- Our Product pagination  -->
-
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center" style="margin-top: 1.5%;">
-    <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-    <div class="spinner-border" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
-  </ul>
-</nav>
-
-                   <!-- Our Product pagination end -->
-             
-
-
-
-
-              <!-- Footer -->
-
-
-
-      <footer>
-         <div class="container-fluid">
-         <div class="row">
-   
-            <div class="col-lg-4  col-sm-4 col-xs-12 ">
-                <ul class="adress">
-                     <h1 class="footernews text-center text-dark " >NewsLetter</h1>   
-                     <a href="products.html" class="footerbtn">*Your email address</a> 
-                 </ul>
-            </div>
-             <!-- Footer links -->
-            <div class="col-lg-4  col-sm-4 col-xs-12 ">
-               <div class="footer">
-                <ul id="footernav"> 
-                    <li><a href="contact.html">Contact us</a></li>
-                   <li><a href="about-us.html">fAQ</a></li>
-                   <li><a href="testimonies.html">Legal terms and conditions</a></li>
-                   <li><a href="testimonies.html">Product ranking</a></li>
+                <!-- Our Product pagination  -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center" style="margin-top: 1.5%;">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                  <div class="spinner-border" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
                 </ul>
-               </div>
-            </div>
+              </nav>
+                <!-- Our Product pagination end -->
 
-          <!-- Footer Social -->
-          <div class="col-lg-4  col-sm-4 col-xs-12">
-                <div class="socialmenu text-center">
-                   <h1 class="footersocial text-center text-dark " >Follow us</h1> 
-                      <a href="#"><i class="fa fa-facebook-f fa-2x"></i></a>
-                      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                      <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
-                      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                 </div>
-              </div> 
-         </div>
-     </footer>
 
+
+
+                <!-- Footer -->
+              <footer>
+                <div class="container-fluid">
+                <div class="row">
+          
+                    <div class="col-lg-4  col-sm-4 col-xs-12 ">
+                        <ul class="adress">
+                            <h1 class="footernews text-center text-dark " >NewsLetter</h1>   
+                            <a href="products.html" class="footerbtn">*Your email address</a> 
+                        </ul>
+                    </div>
+                    <!-- Footer links -->
+                    <div class="col-lg-4  col-sm-4 col-xs-12 ">
+                      <div class="footer">
+                        <ul id="footernav"> 
+                            <li><a href="contact.html">Contact us</a></li>
+                          <li><a href="about-us.html">fAQ</a></li>
+                          <li><a href="testimonies.html">Legal terms and conditions</a></li>
+                          <li><a href="testimonies.html">Product ranking</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  <!-- Footer Social -->
+                  <div class="col-lg-4  col-sm-4 col-xs-12">
+                        <div class="socialmenu text-center">
+                          <h1 class="footersocial text-center text-dark " >Follow us</h1> 
+                              <a href="#"><i class="fa fa-facebook-f fa-2x"></i></a>
+                              <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                              <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+                              <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                        </div>
+                      </div> 
+                </div>
+            </footer>
               <!-- Footer -->
-
-
-
 </body>
 </html>    
